@@ -9,3 +9,7 @@ This is a cli tool to test load on an API.
 ### Options 
 
 - `--save file.json` => Saves results to file
+
+## Notes
+
+This is not version 1 yet.
