@@ -1,14 +1,14 @@
 pub struct RunnerOptions {
     pub delay: i32,
     pub total_num_reqs: i32,
-    pub concurrent_reqs: i32
+    pub concurrent_reqs: i32,
 }
 
 // Options for sequential run
 pub struct RunOptions {
     pub url: String,
     pub delay: i32,
-    pub num_reqs: i32
+    pub num_reqs: i32,
 }
 
 impl RunnerOptions {
@@ -16,7 +16,7 @@ impl RunnerOptions {
         RunnerOptions {
             delay,
             total_num_reqs,
-            concurrent_reqs
+            concurrent_reqs,
         }
     }
 }
@@ -26,7 +26,7 @@ impl RunOptions {
         RunOptions {
             url,
             delay,
-            num_reqs
+            num_reqs,
         }
     }
 }
