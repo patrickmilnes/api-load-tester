@@ -8,7 +8,8 @@ This is a cli tool to test load on an API.
 
 ### Options 
 
-- `--save file.json` => Saves results to file
+- `--save file.json`    => Saves results to file
+- `-q`                  => Does not pretty print, `--save` flag is required when using this
 
 ## Notes
 
