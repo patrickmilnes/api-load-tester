@@ -1,0 +1,6 @@
+{
+  "delay": 200,
+  "total-reqs": 5000,
+  "concurrent-reqs": 10,
+  "url": "http://localhost:5156/load/hello"
+}

@@ -55,7 +55,10 @@ async fn run(options: RunOptions) -> Result<RunResult, Box<dyn Error>> {
         // Make http request
         let res = reqwest::get(options.url.as_str()).await?;
 
+        // Record time taken
         let time_taken = now.elapsed()?.as_millis();
+
+        // Build request struct
         let req_result = RequestResult {
             run_index: req,
             status_code: res.status().as_u16(),
@@ -63,6 +66,7 @@ async fn run(options: RunOptions) -> Result<RunResult, Box<dyn Error>> {
             time_taken,
         };
 
+        // Add results to results vector
         results.push(req_result);
         sleep(Duration::from_millis(options.delay as u64)).await;
     }

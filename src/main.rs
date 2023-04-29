@@ -2,6 +2,7 @@ mod run_result;
 mod runner;
 mod runner_options;
 mod runner_results;
+mod command_line_options;
 
 use crate::run_result::RunResults;
 use crate::runner::run_reqs;
