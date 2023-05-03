@@ -18,7 +18,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     // Run http load runner
     let opts = RunnerOptions::new(delay, total_num_reqs, concurrent_reqs);
-    let url = "http://localhost:5156/load/hello";
+    let url = "http://localhost:9000/load/hello";
 
     let res: RunResults = run_reqs(opts, url).await?;
 
@@ -26,7 +26,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     // let _res = test().await?;
     // println!("done");
 
-    print_results_pretty(res);
+    // print_results_pretty(res);
 
     Ok(())
 }
