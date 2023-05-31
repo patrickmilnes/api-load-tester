@@ -21,4 +21,4 @@ This is a cli tool to test load on an API.
 
 ## Notes
 
-This is not version 1 yet.
+This is not version 1 yet. Therefor features are not there
